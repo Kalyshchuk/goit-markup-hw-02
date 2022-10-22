@@ -1,24 +1,48 @@
-.body {
+
+/* цвет основного текста белый #FFFFFF */
+
+/* цвет вторичного текста черный #212121 */
+
+/* акцент голубой #2196F3; */
+
+/* цвет параграфа rgba(117, 117, 117, 1) */
+
+
+body {
     font-family: 'Roboto', sans-serif;
+    color: #212121;
 }
 
-.header-list-link {
+/* верхній список посилань */
+
+.header-logo {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.list-active-link {
+    color: #2196F3;
+}
+
+.header-auth-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #2196F3;
+    text-decoration: none;
+}
 
 .header-link {
     text-decoration: none;
 }
 
 
-}
-
 .list {
     list-style: none;
 }
+
+/* ссилка на пошту */
 
 .header-mailto-link {
     text-decoration: none;
@@ -32,6 +56,7 @@
     color: #2196F3;
 }
 
+/* ссилка на телефон */
 .header-tel-link {
     text-decoration: none;
 }
@@ -44,14 +69,22 @@
     color: #757575;
 }
 
-.header-list-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #2196F3;
+/* нижній список посилань */
+
+.footer-logo {
+    text-decoration: none;
 }
 
-.list-active-link {
-    color: #2196F3;
+.footer-list list {
+    text-decoration: none;
+}
+
+.subtitle-one, 
+.desc-one,
+.caption-one {
+    color: #212121;
+}
+
+.title-one {
+    color: #FFFFFF;
 }
