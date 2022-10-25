@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.list {
+    list-style: none;
+}
+
 /* верхній список посилань */
 
 .header {
@@ -35,6 +39,9 @@ body {
     letter-spacing: 0.02em;
     color: #2196F3;
     text-decoration: none;
+}
+.list {
+    list-style: none;
 }
 
 /* секція ефективні рішення */
@@ -87,26 +94,11 @@ body {
     background-color: #F5F5F5;
 }
 
-
 .header-link {
     text-decoration: none;
 }
 
-.list {
-    list-style: none;
-}
-
-/* .section-one {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #212121;
-} */
-
-.section-list > h3 {
+.section-list > li > h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -118,23 +110,20 @@ body {
     color: #212121;
 }
 
-/* .section-list {
-    font-family: 'Roboto';
-    font-style: normal;
+.section-list > li > p {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-        /* or 171% */
+    /* or 171% */
     letter-spacing: 0.03em;
-    color: rgba(117, 117, 117, 1)
-}  */
+    color: #757575;
+}
 
 /* секція чим ми займаємося */
 
 .desc {
     background-color: #F5F5F5;
 }
-
 
 .desc-one {
     font-family: 'Roboto';
@@ -144,17 +133,22 @@ body {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    
     color: #212121;
 }
 
+.list {
+    list-style: none;
+}
+
 /* якщо кртинки не стануть в правильне місце - видалити позицію нижче */
-.desc-list list {
+.desc-list > img {
     position: absolute;
     width: 370px;
     height: 294px;
     left: 215px;
     top: 1058px;
+    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+    mix-blend-mode: normal;
 }
 
 /* секція наша команда */
@@ -163,21 +157,43 @@ body {
     background-color: #F5F4FA;
 }
 
-/* .caption-teo list {
-    position: absolute;
-    width: 1170px;
-    height: 368px;
-    left: 215px;
-    top: 1632px;
+.caption-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
-.caption-two > li {
+/* секція карток */
+
+.caption-list > img + h3 + p {
     position: absolute;
     width: 270px;
     height: 368px;
-    left: 1115px;
+    left: 515px;
     top: 1632px;
-} */
+}
+
+.caption-two > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.caption-two > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
 
 /* секція контакти */
 
@@ -189,26 +205,21 @@ body {
 
 .logo {
     text-decoration: none;
+    color:rgba(255, 255, 255, 1);
 }
 
-.footer-list list {
+.footer-list {
     text-decoration: none;
-}
-
-.subtitle-one,
-.desc-one,
-.caption-one {
-    color: #212121;
 }
 
 
 /* ссилка на пошту */
 
-.header-mailto-link {
+.footer-mailto-link {
     text-decoration: none;
 }
 
-.header-mailto-link {
+.footer-mailto-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -217,7 +228,7 @@ body {
 }
 
 /* ссилка на телефон */
-.header-tel-link {
+.footer-tel-link {
     text-decoration: none;
 }
 
