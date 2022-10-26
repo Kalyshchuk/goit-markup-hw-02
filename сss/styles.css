@@ -11,37 +11,89 @@
 
 /* секція рішення текст білий #FFFFFF */
 
+/* .root {
+    --primary-text-color: #212121;
+    --lead-text-color: #757575;
+    ---accent-color: #2196F3;
+} */
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #757575;
+    color: #212121;
 }
 
-/* .list {
+.logo {
+    color: #2196F3;
+}
+
+.logo:hover {
+    color: #2196F3;
+}
+
+.list {
     list-style: none;
-} */
+}
 
 /* верхній список посилань */
 
+.header-site .link:hover,
+.header-site .link:focus {
+    color: #212121;
+}
+
+.header-site .link.current {
+    color: #2196F3;
+}
+
+.list-active-link {
+    color: #2196F3;
+}
 
 
 /* секція ефективні рішення */
 
+.section-title {
+    color: #FFFFFF;
+}
 
+.section {
+    background-color: #2F303A;
+}
 
 /* кнопка */
 
-
+.button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
 
 /* секія переваги */
 
+.list {
+    background-color: #F5F5F5;
+}
+
+.list-items .text {
+    color: #757575;
+}
 
 
 /* секція чим ми займаємося */
 
-
+.desc {
+   background-color: #F5F5F5;
+}
 
 /* секція наша команда */
 
+.team {
+    background-color: #F5F4FA;
+}
+
+.subject {
+    color: #757575;
+}
 
 /* секція карток */
 
@@ -49,12 +101,24 @@ body {
 
 /* секція контакти */
 
+.footer {
+    background-color: #2F303A;
+}
 
+.footer .link {
+    color: #FFFFFF;
+}
+
+.footer-address {
+    text-decoration: none;
+}
 /* нижній список посилань */
-
 
 /* ссилка на пошту */
 
+.footer .mail {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 /* ссилка на телефон */
 
