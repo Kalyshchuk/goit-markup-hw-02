@@ -16,6 +16,7 @@
     --lead-text-color: #757575;
     ---accent-color: #2196F3;
 } */
+/* хотів помняти колір через root, але не вийшло */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -23,11 +24,19 @@ body {
 }
 
 .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
     color: #2196F3;
 }
 
 .logo:hover {
     color: #2196F3;
+}
+
+.logo {
+    text-decoration: none;
 }
 
 .list {
@@ -36,25 +45,58 @@ body {
 
 /* верхній список посилань */
 
-.header-site .link:hover,
-.header-site .link:focus {
+.site .link:hover,
+.site .link:focus {
+    color: #2196F3;
+}
+
+.site {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.site .link {
     color: #212121;
 }
 
-.header-site .link.current {
+/* для сторінки Портфоліо .site .link */
+.site .link {
+    color: #212121
+}
+/* .site .link */
+
+.site .link.current {
     color: #2196F3;
 }
 
-.list-active-link {
-    color: #2196F3;
+.site .link {
+    text-decoration: none;
 }
 
+.site-auth .link {
+    text-decoration: none;
+}
 
+.site-auth .link-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
 
 /* секція ефективні рішення */
 
 .section-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
     color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .section {
@@ -63,16 +105,38 @@ body {
 
 /* кнопка */
 
+.section.button:hover,
+.section.button:focus {
+    color:rgba(255, 255, 255, 0.6);
+}
+
 .button {
     color: #FFFFFF;
     background-color: #2196F3;
     border-color: #2196F3;
 }
 
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
 /* секія переваги */
 
 .list {
     background-color: #F5F5F5;
+}
+
+.list-items .quote {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .list-items .text {
@@ -86,13 +150,38 @@ body {
    background-color: #F5F5F5;
 }
 
+.desc-one {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 /* секція наша команда */
 
 .team {
     background-color: #F5F4FA;
 }
 
+.team-caption {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-item .excerpt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .subject {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     color: #757575;
 }
 
@@ -106,18 +195,23 @@ body {
     background-color: #2F303A;
 }
 
+.decoration {
+    background-color: #2F303A;
+}
+
+
 .footer .link {
     color: #FFFFFF;
 }
 
-.footer-address {
+.decoration {
     text-decoration: none;
 }
 /* нижній список посилань */
 
 /* ссилка на пошту */
 
-.footer .mail {
+.address-list .mail {
     color: rgba(255, 255, 255, 0.6);
 }
 
