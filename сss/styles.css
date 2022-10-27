@@ -105,15 +105,14 @@ body {
 
 /* кнопка */
 
-.section.button:hover,
-.section.button:focus {
-    color:rgba(255, 255, 255, 0.6);
+.section .button:hover,
+.section .button:focus {
+    color: rgba(33, 150, 243, 1);
 }
 
 .button {
     color: #FFFFFF;
     background-color: #2196F3;
-    border-color: #2196F3;
 }
 
 .button {
@@ -215,5 +214,63 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* ссилка на телефон */
+/* сторінка ПОРТФОЛІО*/
 
+/* список кнопок */
+
+.breadcrumbs .btn {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.breadcrumbs .btn:hover,
+.breadcrumbs .btn:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+/* .btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+} */
+
+.breadcrumbs {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: #F5F4FA;
+}
+
+/* список карток */
+
+.list {
+    background-color: ;
+}
+
+.list {
+    list: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.tagline{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
