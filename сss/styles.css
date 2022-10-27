@@ -11,12 +11,6 @@
 
 /* секція рішення текст білий #FFFFFF */
 
-/* .root {
-    --primary-text-color: #212121;
-    --lead-text-color: #757575;
-    ---accent-color: #2196F3;
-} */
-/* хотів помняти колір через root, але не вийшло */
 
 body {
     font-family: 'Roboto', sans-serif;
