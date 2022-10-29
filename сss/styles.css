@@ -10,19 +10,23 @@
 /* цвет параграфа rgba(117, 117, 117, 1) */
 
 /* секція рішення текст білий #FFFFFF */
-
+:root {
+    --main-color: #212121;
+    --second-color: #757575;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: var(--main-color);
 }
 
 .logo {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,14;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: rgba(33, 150, 243, 1);
 }
 
 .logo:hover {
@@ -47,17 +51,17 @@ body {
 .site {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,14;
     letter-spacing: 0.02em;
 }
 
 .site .link {
-    color: #212121;
+    color: var(--main-color);
 }
 
 /* для сторінки Портфоліо .site .link */
 .site .link {
-    color: #212121
+    color: var(--main-color);
 }
 /* .site .link */
 
@@ -74,11 +78,25 @@ body {
 }
 
 .site-auth .link-item {
+    text-decoration: none;
+}
+
+.site-auth .link {
+    color: #2196F3;
+}
+
+.site-auth .link-item:hover,
+.site-auth .link-item:focus {
+    color: #2196F3;
+}
+
+
+.site-auth .link-item {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--second-color);
 }
 
 /* секція ефективні рішення */
@@ -86,7 +104,7 @@ body {
 .section-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1,36;
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.06em;
@@ -99,20 +117,20 @@ body {
 
 /* кнопка */
 
-.section .button:hover,
-.section .button:focus {
-    color: rgba(33, 150, 243, 1);
+.button:hover,
+.button:focus {
+    color: #2196F3;
 }
 
 .button {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, 1);
 }
 
 .button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,87;
     display: flex;
     align-items: center;
     text-align: center;
@@ -120,20 +138,20 @@ body {
 }
 /* секія переваги */
 
-.list {
-    background-color: #F5F5F5;
+.list-items {
+    background-color:#F5F5F5;
 }
 
 .list-items .quote {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .list-items .text {
-    color: #757575;
+    color: var(--second-color);
 }
 
 
@@ -146,7 +164,7 @@ body {
 .desc-one {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1,16;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -160,7 +178,7 @@ body {
 .team-caption {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1,16;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -168,19 +186,17 @@ body {
 .team-item .excerpt {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .subject {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    color: #757575;
+    line-height: 1.18;
+    color: var(--second-color);
 }
-
-/* секція карток */
-
-
 
 /* секція контакти */
 
@@ -192,62 +208,91 @@ body {
     background-color: #2F303A;
 }
 
+.address-list .mail:hover,
+.address-list .mail:focus {
+    color: #2196F3;
+}
+
+.address-list .tel:hover,
+.address-list .tel:focus {
+    color: #2196F3;
+}
 
 .footer .link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
-.decoration {
+.mail {
     text-decoration: none;
 }
-/* нижній список посилань */
 
-/* ссилка на пошту */
-
-.address-list .mail {
+.mail {
+    font-style: normal;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.tel {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tel {
+    text-decoration: none;
 }
 
 /* сторінка ПОРТФОЛІО*/
 
 /* список кнопок */
 
-.breadcrumbs .btn {
+.list {
+    list-style: none;
+}
+
+.main {
+    background-color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.hero-button .btn.current {
     color: #FFFFFF;
     background-color: #2196F3;
 }
 
-.breadcrumbs .btn:hover,
-.breadcrumbs .btn:focus {
-    color: rgba(33, 150, 243, 1);
+.hero-button .btn:hover,
+.hero-button .btn:focus {
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 1);
 }
 
-/* .btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
+/* .hero-button.current {
+    background-color: rgba(33, 150, 243, 1);
 } */
 
-.breadcrumbs {
+.hero-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     letter-spacing: 0.03em;
-    color: #212121;
-    background-color: #F5F4FA;
+    color: var(--main-color);
 }
 
 /* список карток */
-
-.list {
-    background-color: ;
-}
-
-.list {
-    list: none;
-}
 
 .link {
     text-decoration: none;
@@ -258,13 +303,13 @@ body {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--main-color);
 }
 
 .tagline{
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-color);
 }
